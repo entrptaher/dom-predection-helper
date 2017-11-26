@@ -335,7 +335,7 @@ export default class DomPredictionHelper {
 			this.selectorGets("all", selected, selector) &&
 			this.selectorGets("none", rejected, selector)
 		) {
-			best_so_far = selector
+			best_so_far = selector.replace(/:nth-child\(\w\)/gm, "");
 		}
 		got_shorter = true;
 		while (got_shorter) {

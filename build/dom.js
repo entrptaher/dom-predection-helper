@@ -2623,7 +2623,7 @@ var DomPredictionHelper = function () {
 			look_back_index = -1;
 			best_so_far = "";
 			if (this.selectorGets("all", selected, selector) && this.selectorGets("none", rejected, selector)) {
-				best_so_far = selector;
+				best_so_far = selector.replace(/:nth-child\(\w\)/gm, "");
 			}
 			got_shorter = true;
 			while (got_shorter) {
@@ -2644,8 +2644,6 @@ var DomPredictionHelper = function () {
 					this._removeElements(part, parts, first, function (selector) {
 						if (_this.selectorGets("all", selected, selector) && _this.selectorGets("none", rejected, selector) && (selector.length < best_so_far.length || best_so_far.length === 0)) {
 							best_so_far = selector;
-							console.log(best_so_far);
-
 							got_shorter = true;
 							return true;
 						} else {
