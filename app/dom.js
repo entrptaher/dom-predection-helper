@@ -336,8 +336,6 @@ export default class DomPredictionHelper {
 			this.selectorGets("none", rejected, selector)
 		) {
 			best_so_far = selector
-				.replace(/:nth-child\(\w\)/gm, "")
-				.replace(/\[\w*='\w*'\]./gm, ".")
 		}
 		got_shorter = true;
 		while (got_shorter) {
