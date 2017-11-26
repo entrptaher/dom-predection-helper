@@ -402,6 +402,8 @@ export default class DomPredictionHelper {
       }
       selected_paths = this.getPathsFor(s);
       css = this.cssDiff(selected_paths);
+      console.log(css);
+
       simplest = this.simplifyCss(css, s, r);
       if (simplest.length > 0) {
         return simplest;
