@@ -259,7 +259,7 @@ export default class DomPredictionHelper {
           original: i
         };
       }
-      tmp.sort(({value}, {value}) => value - value);
+      tmp.sort(({value: value1}, {value: value2}) => value1 - value2);
       for (i = _j = 0, _ref1 = priorities.length; 0 <= _ref1 ? _j < _ref1 : _j > _ref1; i = 0 <= _ref1 ? ++_j : --_j) {
         ordering[i] = tmp[i].original;
       }
