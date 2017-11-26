@@ -1,5 +1,5 @@
 {
-		"name": "DomPredictionHelper",
+		"name": "tahy-dom-predection-helper",
 		"version": "1.0.0",
 		"main": "app/index.js",
 		"license": "MIT",
