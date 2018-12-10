@@ -7,7 +7,7 @@ async function loadScript(url) {
 };
 
 loadScript("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js");
-loadScript("https://cdn.rawgit.com/entrptaher/DomPredictionHelper/102b3cdd/build/dom.js");
+loadScript("https://cdn.jsdelivr.net/gh/entrptaher/DomPredictionHelper@102b3cdd/build/dom.js");
 ```
 
 Test it out:
