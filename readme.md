@@ -1,5 +1,5 @@
 Load it:
-```
+```js
 async function loadScript(url) {
   let response = await fetch(url);
   let script = await response.text();
@@ -11,7 +11,7 @@ loadScript("https://cdn.jsdelivr.net/gh/entrptaher/DomPredictionHelper@102b3cdd/
 ```
 
 Test it out:
-```
+```js
 var pHelper = new DomPredictionHelper();
 var css = pHelper.predictCss(jQuery(".title > .storylink"), jQuery("[id=\"15781883\"]"))
 console.log(css);
