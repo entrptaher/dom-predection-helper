@@ -10,13 +10,9 @@ var config = {
   },
   output: {
     path: BUILD_DIR,
-    filename: "[name].js"
+    filename: "[name].js",
+    libraryTarget: "commonjs2"
   },
-  plugins: [
-    new webpack.ProvidePlugin({
-      regeneratorRuntime: "@babel/plugin-transform-runtime"
-    })
-  ],
   module: {
     rules: [
       {
@@ -25,7 +21,15 @@ var config = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-env"]
+            presets: ["@babel/preset-env"],
+            plugins: [
+              [
+                "@babel/plugin-transform-runtime",
+                {
+                  regenerator: true
+                }
+              ]
+            ]
           }
         }
       }

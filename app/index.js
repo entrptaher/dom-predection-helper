@@ -1,3 +1,5 @@
+import { diff_match_patch } from "diff_match_patch";
+
 export default class DomPredictionHelper {
 	recursiveNodes(e) {
 		let n;

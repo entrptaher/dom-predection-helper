@@ -1498,6 +1498,7 @@ detect-libc@^1.0.2:
 diff_match_patch@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/diff_match_patch/-/diff_match_patch-0.1.1.tgz#d3f14d5b76fb4b5a9cf44706261dadb5bd97edbc"
+  integrity sha1-0/FNW3b7S1qc9EcGJh2ttb2X7bw=
 
 diffie-hellman@^5.0.0:
   version "5.0.2"
