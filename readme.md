@@ -1,6 +1,6 @@
 This will help you find a common selector for your given element.
 
-# what's a common selector
+# What's a **common selector**? 🤔
 ![](http://i.imgur.com/9txG5YT.png)
 
 For this image, this is a unique selector, that only applies to that first result,
