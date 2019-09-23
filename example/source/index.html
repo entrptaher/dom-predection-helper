@@ -1,0 +1,351 @@
+﻿<html op="news"><head>
+<base href="https://news.ycombinator.com/"><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><style data-savepage-href="news.css?7r87lPW1k7967JOzhaik" type="text/css">body  { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282; }
+td    { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282; }
+
+.admin td   { font-family:Verdana, Geneva, sans-serif; font-size:8.5pt; color:#000000; }
+.subtext td { font-family:Verdana, Geneva, sans-serif; font-size:  7pt; color:#828282; }
+
+input    { font-family:monospace; font-size:10pt; }
+input[type=\"submit\"] { font-family:Verdana, Geneva, sans-serif; }
+textarea { font-family:monospace; font-size:10pt; }
+
+a:link    { color:#000000; text-decoration:none; }
+a:visited { color:#828282; text-decoration:none; }
+
+.default { font-family:Verdana, Geneva, sans-serif; font-size: 10pt; color:#828282; }
+.admin   { font-family:Verdana, Geneva, sans-serif; font-size:8.5pt; color:#000000; }
+.title   { font-family:Verdana, Geneva, sans-serif; font-size: 10pt; color:#828282; }
+.subtext { font-family:Verdana, Geneva, sans-serif; font-size:  7pt; color:#828282; }
+.yclinks { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
+.pagetop { font-family:Verdana, Geneva, sans-serif; font-size: 10pt; color:#222222; }
+.comhead { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
+.comment { font-family:Verdana, Geneva, sans-serif; font-size:  9pt; }
+.hnname  { margin-right: 5px; }
+
+.comment a:link, .comment a:visited { text-decoration: underline; }
+.noshow { display: none; }
+.nosee { visibility: hidden; pointer-events: none; cursor: default }
+
+.c00, .c00 a:link { color:#000000; }
+.c5a, .c5a a:link, .c5a a:visited { color:#5a5a5a; }
+.c73, .c73 a:link, .c73 a:visited { color:#737373; }
+.c82, .c82 a:link, .c82 a:visited { color:#828282; }
+.c88, .c88 a:link, .c88 a:visited { color:#888888; }
+.c9c, .c9c a:link, .c9c a:visited { color:#9c9c9c; }
+.cae, .cae a:link, .cae a:visited { color:#aeaeae; }
+.cbe, .cbe a:link, .cbe a:visited { color:#bebebe; }
+.cce, .cce a:link, .cce a:visited { color:#cecece; }
+.cdd, .cdd a:link, .cdd a:visited { color:#dddddd; }
+
+.pagetop a:visited { color:#000000;}
+.topsel a:link, .topsel a:visited { color:#ffffff; }
+
+.subtext a:link, .subtext a:visited { color:#828282; }
+.subtext a:hover { text-decoration:underline; }
+
+.comhead a:link, .subtext a:visited { color:#828282; }
+.comhead a:hover { text-decoration:underline; }
+
+.hnmore a:link, a:visited { color:#828282; }
+.hnmore { text-decoration:underline; }
+
+.default p { margin-top: 8px; margin-bottom: 0px; }
+
+.pagebreak {page-break-before:always}
+
+pre { overflow: auto; padding: 2px; }
+pre:hover { overflow:auto }
+
+.votearrow {
+  width:      10px;
+  height:     10px;
+  border:     0px;
+  margin:     3px 2px 6px;
+  background: url("grayarrow.gif")
+  no-repeat;
+}
+
+.votelinks.nosee div.votearrow.rotate180 {
+  display: none;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .votearrow { background-size: 10px; background-image: url("grayarrow2x.gif"); }
+}
+
+.rotate180 {
+  -webkit-transform: rotate(180deg);  /* Chrome and other webkit browsers */
+  -moz-transform:    rotate(180deg);  /* FF */
+  -o-transform:      rotate(180deg);  /* Opera */
+  -ms-transform:     rotate(180deg);  /* IE9 */
+  transform:         rotate(180deg);  /* W3C complaint browsers */
+
+  /* IE8 and below */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=-1, M12=0, M21=0, M22=-1, DX=0, DY=0, SizingMethod='auto expand')";
+}
+
+/* mobile device */
+@media only screen
+and (min-width : 300px)
+and (max-width : 750px) {
+  #hnmain { width: 100%; }
+  body { padding: 0; margin: 0; width: 100%; -webkit-text-size-adjust: none; }
+  td { height: inherit !important; }
+  .title, .comment { font-size: inherit;  }
+  span.pagetop { display: block; margin: 3px 5px; font-size: 12px; }
+  span.pagetop b { display: block; font-size: 15px; }
+  table.comment-tree .comment a { display: inline-block; max-width: 200px; overflow: hidden; white-space: nowrap;
+    text-overflow: ellipsis; vertical-align:top; }
+  img[src='s.gif'][width='40'] { width: 12px; }
+  img[src='s.gif'][width='80'] { width: 24px; }
+  img[src='s.gif'][width='120'] { width: 36px; }
+  img[src='s.gif'][width='160'] { width: 48px; }
+  img[src='s.gif'][width='200'] { width: 60px; }
+  img[src='s.gif'][width='240'] { width: 72px; }
+  img[src='s.gif'][width='280'] { width: 84px; }
+  img[src='s.gif'][width='320'] { width: 96px; }
+  img[src='s.gif'][width='360'] { width: 108px; }
+  img[src='s.gif'][width='400'] { width: 120px; }
+  img[src='s.gif'][width='440'] { width: 132px; }
+  img[src='s.gif'][width='480'] { width: 144px; }
+  img[src='s.gif'][width='520'] { width: 156px; }
+  img[src='s.gif'][width='560'] { width: 168px; }
+  img[src='s.gif'][width='600'] { width: 180px; }
+  img[src='s.gif'][width='640'] { width: 192px; }
+  img[src='s.gif'][width='680'] { width: 204px; }
+  img[src='s.gif'][width='720'] { width: 216px; }
+  img[src='s.gif'][width='760'] { width: 228px; }
+  img[src='s.gif'][width='800'] { width: 240px; }
+  img[src='s.gif'][width='840'] { width: 252px; }
+  .title { font-size: 11pt; line-height: 14pt;  }
+  .subtext { font-size: 9pt; }
+  .itemlist { padding-right: 5px;}
+  .votearrow { transform: scale(1.3,1.3); margin-right: 6px; }
+  .votearrow.rotate180 {
+    -webkit-transform: rotate(180deg) scale(1.3,1.3);  /* Chrome and other webkit browsers */
+    -moz-transform:    rotate(180deg) scale(1.3,1.3);  /* FF */
+    -o-transform:      rotate(180deg) scale(1.3,1.3);  /* Opera */
+    -ms-transform:     rotate(180deg) scale(1.3,1.3);  /* IE9 */
+    transform:         rotate(180deg) scale(1.3,1.3);  /* W3C complaint browsers */
+  }
+  .votelinks { min-width: 18px; }
+  .votelinks a { display: block; margin-bottom: 9px; }
+  input[type='text'], input[type='number'], textarea { font-size: 16px; width: 90%; }
+}
+
+.comment { max-width: 1215px; overflow: hidden }
+pre { max-width: 900px; }
+
+@media only screen and (min-width : 300px) and (max-width : 389px) {
+  .comment { max-width: 270px; overflow: hidden }
+  pre { max-width: 200px; }
+}
+@media only screen and (min-width : 390px) and (max-width : 509px) {
+  .comment { max-width: 350px; overflow: hidden }
+  pre { max-width: 260px; }
+}
+@media only screen and (min-width : 510px) and (max-width : 599px) {
+  .comment { max-width: 460px; overflow: hidden }
+  pre { max-width: 340px; }
+}
+@media only screen and (min-width : 600px) and (max-width : 689px) {
+  .comment { max-width: 540px; overflow: hidden }
+  pre { max-width: 400px; }
+}
+@media only screen and (min-width : 690px) and (max-width : 809px) {
+  .comment { max-width: 620px; overflow: hidden }
+  pre { max-width: 460px; }
+}
+@media only screen and (min-width : 810px) and (max-width : 899px) {
+  .comment { max-width: 730px; overflow: hidden }
+  pre { max-width: 540px; }
+}
+@media only screen and (min-width : 900px) and (max-width : 1079px) {
+  .comment { max-width: 810px; overflow: hidden }
+  pre { max-width: 600px; }
+}
+@media only screen and (min-width : 1080px) and (max-width : 1169px) {
+  .comment { max-width: 970px; overflow: hidden }
+  pre { max-width: 720px; }
+}
+@media only screen and (min-width : 1170px) and (max-width : 1259px) {
+  .comment { max-width: 1050px; overflow: hidden }
+  pre { max-width: 780px; }
+}
+@media only screen and (min-width : 1260px) and (max-width : 1349px) {
+  .comment { max-width: 1130px; overflow: hidden }
+  pre { max-width: 840px; }
+}
+</style>
+            <link rel="shortcut icon" data-savepage-href="favicon.ico" href="data:image/x-icon;base64,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">
+          <link rel="alternate" type="application/rss+xml" title="RSS" href="rss">
+        <title>Hacker News</title>
+<style id="savepage-cssvariables">
+  :root {
+    --savepage-url-3: url(data:image/gif;base64,R0lGODlhCgAKALMJANPT06enp/b29r+/v52dnfn5+bq6usLCwpqamv///wAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAkALAAAAAAKAAoAAAQcMMlJq712GIzQDV1QFV0nUETZTYDaAdIhz3ISAQA7);
+  }
+</style>
+<script id="savepage-shadowloader" type="application/javascript">
+  "use strict"
+  window.addEventListener("DOMContentLoaded",
+  function(event)
+  {
+    savepage_ShadowLoader(5);
+  },false);
+  function savepage_ShadowLoader(c){createShadowDOMs(0,document.documentElement);function createShadowDOMs(a,b){var i;if(b.localName=="iframe"||b.localName=="frame"){if(a<c){try{if(b.contentDocument.documentElement!=null){createShadowDOMs(a+1,b.contentDocument.documentElement)}}catch(e){}}}else{if(b.children.length>=1&&b.children[0].localName=="template"&&b.children[0].hasAttribute("data-savepage-shadowroot")){b.attachShadow({mode:"open"}).appendChild(b.children[0].content);b.removeChild(b.children[0]);for(i=0;i<b.shadowRoot.children.length;i++)if(b.shadowRoot.children[i]!=null)createShadowDOMs(a,b.shadowRoot.children[i])}for(i=0;i<b.children.length;i++)if(b.children[i]!=null)createShadowDOMs(a,b.children[i])}}}
+</script>
+<meta name="savepage-url" content="https://news.ycombinator.com/">
+<meta name="savepage-title" content="Hacker News">
+<meta name="savepage-from" content="https://news.ycombinator.com/">
+<meta name="savepage-date" content="Mon Sep 23 2019 22:48:43 GMT+0600 (Bangladesh Standard Time)">
+<meta name="savepage-state" content="Standard Items; Retained cross-origin frames; Removed unsaved URLs; Max frame depth = 5; Max resource size = 50MB; Max resource time = 10s;">
+<meta name="savepage-version" content="16.1">
+<meta name="savepage-comments" content="">
+  </head><body><center><table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+        <tbody><tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tbody><tr><td style="width:18px;padding-right:4px"><a href="https://news.ycombinator.com"><img data-savepage-src="y18.gif" src="data:image/gif;base64,R0lGODlhEgASAKIAAP/jyvihV/aKLfmxc/////9mAAAAAAAAACH5BAAAAAAALAAAAAASABIAAAMpWLrc/jDKOQkRy8pBhuKeRAAKQFBBxwVUYY5twXVxodV3nLd77f9ASQIAOw==" width="18" height="18" style="border:1px white solid;"></a></td>
+                  <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b>
+              <a href="newest">new</a> | <a href="front">past</a> | <a href="newcomments">comments</a> | <a href="ask">ask</a> | <a href="show">show</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>            </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                              <a href="login?goto=news">login</a>
+                          </span></td>
+              </tr></tbody></table></td></tr>
+<tr id="pagespace" title="" style="height:10px"></tr><tr><td><table border="0" cellpadding="0" cellspacing="0" class="itemlist">
+              <tbody><tr class="athing" id="21050149">
+      <td align="right" valign="top" class="title"><span class="rank">1.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21050149" href="vote?id=21050149&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://www.apple.com/newsroom/2019/09/apples-new-mac-pro-to-be-made-in-texas/" class="storylink">Apple’s New Mac Pro to Be Made in Texas</a><span class="sitebit comhead"> (<a href="from?site=apple.com"><span class="sitestr">apple.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21050149">149 points</span> by <a href="user?id=infodocket" class="hnuser">infodocket</a> <span class="age"><a href="item?id=21050149">43 minutes ago</a></span> <span id="unv_21050149"></span> | <a href="hide?id=21050149&goto=news">hide</a> | <a href="item?id=21050149">69 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21046547">
+      <td align="right" valign="top" class="title"><span class="rank">2.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21046547" href="vote?id=21046547&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="http://einaregilsson.com/serverless-15-percent-slower-and-eight-times-more-expensive/" class="storylink">Serverless: slower and more expensive</a><span class="sitebit comhead"> (<a href="from?site=einaregilsson.com"><span class="sitestr">einaregilsson.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21046547">1184 points</span> by <a href="user?id=kiyanwang" class="hnuser">kiyanwang</a> <span class="age"><a href="item?id=21046547">9 hours ago</a></span> <span id="unv_21046547"></span> | <a href="hide?id=21046547&goto=news">hide</a> | <a href="item?id=21046547">446 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21048942">
+      <td align="right" valign="top" class="title"><span class="rank">3.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21048942" href="vote?id=21048942&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://www.opensourceseeds.org/en/home" class="storylink">OpenSourceSeeds</a><span class="sitebit comhead"> (<a href="from?site=opensourceseeds.org"><span class="sitestr">opensourceseeds.org</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21048942">85 points</span> by <a href="user?id=void_nill" class="hnuser">void_nill</a> <span class="age"><a href="item?id=21048942">2 hours ago</a></span> <span id="unv_21048942"></span> | <a href="hide?id=21048942&goto=news">hide</a> | <a href="item?id=21048942">12 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21049656">
+      <td align="right" valign="top" class="title"><span class="rank">4.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21049656" href="vote?id=21049656&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://www.latimes.com/world-nation/story/2019-09-22/face-transplant-woman-needs-second-operation" class="storylink">Face transplant recipient’s donor face now failing</a><span class="sitebit comhead"> (<a href="from?site=latimes.com"><span class="sitestr">latimes.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21049656">41 points</span> by <a href="user?id=hsnewman" class="hnuser">hsnewman</a> <span class="age"><a href="item?id=21049656">1 hour ago</a></span> <span id="unv_21049656"></span> | <a href="hide?id=21049656&goto=news">hide</a> | <a href="item?id=21049656">16 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21048093">
+      <td align="right" valign="top" class="title"><span class="rank">5.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21048093" href="vote?id=21048093&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://www.wsj.com/articles/snap-detailed-facebooks-aggressive-tactics-in-project-voldemort-dossier-11569236404?mod=rsswn" class="storylink">Snap Detailed Facebook’s Aggressive Tactics in ‘Project Voldemort’ Dossier</a><span class="sitebit comhead"> (<a href="from?site=wsj.com"><span class="sitestr">wsj.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21048093">147 points</span> by <a href="user?id=wyclif" class="hnuser">wyclif</a> <span class="age"><a href="item?id=21048093">4 hours ago</a></span> <span id="unv_21048093"></span> | <a href="hide?id=21048093&goto=news">hide</a> | <a href="item?id=21048093">50 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21050366">
+      <td align="right" valign="top" class="title"><span class="rank">6.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21050366" href="vote?id=21050366&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://meetingorganizer.copernicus.org/EPSC-DPS2019/EPSC-DPS2019-1846-1.pdf" class="storylink">A view to the possible habitability of ancient Venus over three billion years [pdf]</a><span class="sitebit comhead"> (<a href="from?site=copernicus.org"><span class="sitestr">copernicus.org</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21050366">11 points</span> by <a href="user?id=bookofjoe" class="hnuser">bookofjoe</a> <span class="age"><a href="item?id=21050366">25 minutes ago</a></span> <span id="unv_21050366"></span> | <a href="hide?id=21050366&goto=news">hide</a> | <a href="item?id=21050366">1 comment</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21049378">
+      <td align="right" valign="top" class="title"><span class="rank">7.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21049378" href="vote?id=21049378&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://www.nature.com/articles/d41586-019-02861-5" class="storylink">Farm animals in India and China are becoming more resistant to antibiotics</a><span class="sitebit comhead"> (<a href="from?site=nature.com"><span class="sitestr">nature.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21049378">96 points</span> by <a href="user?id=digital55" class="hnuser">digital55</a> <span class="age"><a href="item?id=21049378">2 hours ago</a></span> <span id="unv_21049378"></span> | <a href="hide?id=21049378&goto=news">hide</a> | <a href="item?id=21049378">37 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21049335">
+      <td align="right" valign="top" class="title"><span class="rank">8.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21049335" href="vote?id=21049335&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://www.newyorker.com/magazine/2019/09/30/the-dark-side-of-techno-utopianism" class="storylink">The Dark Side of Techno-Utopianism</a><span class="sitebit comhead"> (<a href="from?site=newyorker.com"><span class="sitestr">newyorker.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21049335">28 points</span> by <a href="user?id=IfOnlyYouKnew" class="hnuser">IfOnlyYouKnew</a> <span class="age"><a href="item?id=21049335">2 hours ago</a></span> <span id="unv_21049335"></span> | <a href="hide?id=21049335&goto=news">hide</a> | <a href="item?id=21049335">22 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21042101">
+      <td align="right" valign="top" class="title"><span class="rank">9.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21042101" href="vote?id=21042101&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://www.nature.com/immersive/d41586-019-02711-4/index.html" class="storylink">Charts show how little progress has been made in limiting greenhouse emissions</a><span class="sitebit comhead"> (<a href="from?site=nature.com"><span class="sitestr">nature.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21042101">187 points</span> by <a href="user?id=jsingleton" class="hnuser">jsingleton</a> <span class="age"><a href="item?id=21042101">7 hours ago</a></span> <span id="unv_21042101"></span> | <a href="hide?id=21042101&goto=news">hide</a> | <a href="item?id=21042101">51 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21049127">
+      <td align="right" valign="top" class="title"><span class="rank">10.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21049127" href="vote?id=21049127&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://longreads.com/2019/09/05/how-google-discovered-the-value-of-surveillance/" class="storylink">How Google Discovered the Value of Surveillance</a><span class="sitebit comhead"> (<a href="from?site=longreads.com"><span class="sitestr">longreads.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21049127">110 points</span> by <a href="user?id=anarbadalov" class="hnuser">anarbadalov</a> <span class="age"><a href="item?id=21049127">2 hours ago</a></span> <span id="unv_21049127"></span> | <a href="hide?id=21049127&goto=news">hide</a> | <a href="item?id=21049127">31 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21045935">
+      <td align="right" valign="top" class="title"><span class="rank">11.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21045935" href="vote?id=21045935&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="http://keyhut.com/pos.htm" class="storylink">Keyhut POS: Free Point-of-Sale Software for DOS</a><span class="sitebit comhead"> (<a href="from?site=keyhut.com"><span class="sitestr">keyhut.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21045935">278 points</span> by <a href="user?id=jandeboevrie" class="hnuser">jandeboevrie</a> <span class="age"><a href="item?id=21045935">12 hours ago</a></span> <span id="unv_21045935"></span> | <a href="hide?id=21045935&goto=news">hide</a> | <a href="item?id=21045935">118 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21046582">
+      <td align="right" valign="top" class="title"><span class="rank">12.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21046582" href="vote?id=21046582&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://creekorful.me/building-fast-modern-web-crawler/" class="storylink">Building a Dark Web Crawler in Go</a><span class="sitebit comhead"> (<a href="from?site=creekorful.me"><span class="sitestr">creekorful.me</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21046582">207 points</span> by <a href="user?id=aadlani" class="hnuser">aadlani</a> <span class="age"><a href="item?id=21046582">9 hours ago</a></span> <span id="unv_21046582"></span> | <a href="hide?id=21046582&goto=news">hide</a> | <a href="item?id=21046582">77 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21048822">
+      <td align="right" valign="top" class="title"><span class="rank">13.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21048822" href="vote?id=21048822&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://yokota.blog/2019/09/23/building-a-relational-database-using-kafka/" class="storylink">Building a Relational Database Using Kafka</a><span class="sitebit comhead"> (<a href="from?site=yokota.blog"><span class="sitestr">yokota.blog</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21048822">55 points</span> by <a href="user?id=rayokota" class="hnuser">rayokota</a> <span class="age"><a href="item?id=21048822">3 hours ago</a></span> <span id="unv_21048822"></span> | <a href="hide?id=21048822&goto=news">hide</a> | <a href="item?id=21048822">7 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21044529">
+      <td align="right" valign="top" class="title"><span class="rank">14.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21044529" href="vote?id=21044529&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://idea.popcount.org/2019-09-20-when-tcp-sockets-refuse-to-die/" class="storylink">When TCP sockets refuse to die</a><span class="sitebit comhead"> (<a href="from?site=popcount.org"><span class="sitestr">popcount.org</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21044529">188 points</span> by <a href="user?id=ingve" class="hnuser">ingve</a> <span class="age"><a href="item?id=21044529">12 hours ago</a></span> <span id="unv_21044529"></span> | <a href="hide?id=21044529&goto=news">hide</a> | <a href="item?id=21044529">16 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21043610">
+      <td align="right" valign="top" class="title"><span class="rank">15.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21043610" href="vote?id=21043610&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://www.seattletimes.com/pacific-nw-magazine/the-tiny-but-mighty-olympia-oyster-regains-a-foothold-in-washington-waters/" class="storylink">The tiny but mighty Olympia oyster regains a foothold in Washington waters</a><span class="sitebit comhead"> (<a href="from?site=seattletimes.com"><span class="sitestr">seattletimes.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21043610">85 points</span> by <a href="user?id=DoreenMichele" class="hnuser">DoreenMichele</a> <span class="age"><a href="item?id=21043610">10 hours ago</a></span> <span id="unv_21043610"></span> | <a href="hide?id=21043610&goto=news">hide</a> | <a href="item?id=21043610">14 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21049059">
+      <td align="right" valign="top" class="title"><span class="rank">16.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21049059" href="vote?id=21049059&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://www.usatoday.com/story/money/columnist/2019/09/22/debt-debt-doom-america/2384550001/" class="storylink">Will America's debt doom us?</a><span class="sitebit comhead"> (<a href="from?site=usatoday.com"><span class="sitestr">usatoday.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21049059">64 points</span> by <a href="user?id=spking" class="hnuser">spking</a> <span class="age"><a href="item?id=21049059">2 hours ago</a></span> <span id="unv_21049059"></span> | <a href="hide?id=21049059&goto=news">hide</a> | <a href="item?id=21049059">94 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21048083">
+      <td align="right" valign="top" class="title"><span class="rank">17.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21048083" href="vote?id=21048083&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://www.nytimes.com/2019/09/23/science/mathematicians-blackboard-photographs-jessica-wynne.html" class="storylink">Where Theory Meets Chalk, Dust Flies</a><span class="sitebit comhead"> (<a href="from?site=nytimes.com"><span class="sitestr">nytimes.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21048083">85 points</span> by <a href="user?id=sohkamyung" class="hnuser">sohkamyung</a> <span class="age"><a href="item?id=21048083">4 hours ago</a></span> <span id="unv_21048083"></span> | <a href="hide?id=21048083&goto=news">hide</a> | <a href="item?id=21048083">39 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21050610">
+      <td align="right" valign="top" class="title"><span class="rank">18.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21050610" href="vote?id=21050610&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/?WT.mc_id=social-twitter-marouill" class="storylink" rel="nofollow">.NET Core 3.0</a><span class="sitebit comhead"> (<a href="from?site=microsoft.com"><span class="sitestr">microsoft.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21050610">5 points</span> by <a href="user?id=hmexx" class="hnuser">hmexx</a> <span class="age"><a href="item?id=21050610">5 minutes ago</a></span> <span id="unv_21050610"></span> | <a href="hide?id=21050610&goto=news">hide</a> | <a href="item?id=21050610">discuss</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21049093">
+      <td align="right" valign="top" class="title"><span class="rank">19.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21049093" href="vote?id=21049093&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://drewdevault.com/2019/09/23/RaptorCS-Blackbird-a-horror-story.html" class="storylink">RaptorCS Power9 Blackbird PC: An expensive mistake</a><span class="sitebit comhead"> (<a href="from?site=drewdevault.com"><span class="sitestr">drewdevault.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21049093">74 points</span> by <a href="user?id=stargrave" class="hnuser">stargrave</a> <span class="age"><a href="item?id=21049093">2 hours ago</a></span> <span id="unv_21049093"></span> | <a href="hide?id=21049093&goto=news">hide</a> | <a href="item?id=21049093">12 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21045987">
+      <td align="right" valign="top" class="title"><span class="rank">20.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21045987" href="vote?id=21045987&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://bedrockdb.com/" class="storylink">Bedrock – A modular, WAN-replicated, blockchain-based database</a><span class="sitebit comhead"> (<a href="from?site=bedrockdb.com"><span class="sitestr">bedrockdb.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21045987">60 points</span> by <a href="user?id=dhruvkar" class="hnuser">dhruvkar</a> <span class="age"><a href="item?id=21045987">11 hours ago</a></span> <span id="unv_21045987"></span> | <a href="hide?id=21045987&goto=news">hide</a> | <a href="item?id=21045987">24 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21050611">
+      <td align="right" valign="top" class="title"><span class="rank">21.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21050611" href="vote?id=21050611&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://news.yahoo.com/ny-fed-pump-75-bn-money-markets-daily-154943871.html" class="storylink" rel="nofollow">NY Fed to pump $75 bn into money markets daily through Oct 10</a><span class="sitebit comhead"> (<a href="from?site=yahoo.com"><span class="sitestr">yahoo.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21050611">3 points</span> by <a href="user?id=Anon84" class="hnuser">Anon84</a> <span class="age"><a href="item?id=21050611">5 minutes ago</a></span> <span id="unv_21050611"></span> | <a href="hide?id=21050611&goto=news">hide</a> | <a href="item?id=21050611">discuss</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21044657">
+      <td align="right" valign="top" class="title"><span class="rank">22.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21044657" href="vote?id=21044657&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://www.youtube.com/watch?v=34FLhwkrwoQ" class="storylink">The Tandberg Way [video]</a><span class="sitebit comhead"> (<a href="from?site=youtube.com"><span class="sitestr">youtube.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21044657">28 points</span> by <a href="user?id=rspivak" class="hnuser">rspivak</a> <span class="age"><a href="item?id=21044657">7 hours ago</a></span> <span id="unv_21044657"></span> | <a href="hide?id=21044657&goto=news">hide</a> | <a href="item?id=21044657">1 comment</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21036589">
+      <td align="right" valign="top" class="title"><span class="rank">23.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21036589" href="vote?id=21036589&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://archive.org/details/TheLoomOfLanguage/page/n3" class="storylink">The Loom of Language (1944)</a><span class="sitebit comhead"> (<a href="from?site=archive.org"><span class="sitestr">archive.org</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21036589">19 points</span> by <a href="user?id=montalbano" class="hnuser">montalbano</a> <span class="age"><a href="item?id=21036589">7 hours ago</a></span> <span id="unv_21036589"></span> | <a href="hide?id=21036589&goto=news">hide</a> | <a href="item?id=21036589">1 comment</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21041277">
+      <td align="right" valign="top" class="title"><span class="rank">24.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21041277" href="vote?id=21041277&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3449762" class="storylink">Why Are Some Societies More Entrepreneurial than Others?</a><span class="sitebit comhead"> (<a href="from?site=ssrn.com"><span class="sitestr">ssrn.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21041277">136 points</span> by <a href="user?id=elsewhen" class="hnuser">elsewhen</a> <span class="age"><a href="item?id=21041277">12 hours ago</a></span> <span id="unv_21041277"></span> | <a href="hide?id=21041277&goto=news">hide</a> | <a href="item?id=21041277">95 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21046984">
+      <td align="right" valign="top" class="title"><span class="rank">25.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21046984" href="vote?id=21046984&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://www.theverge.com/2018/4/16/17233946/olpcs-100-laptop-education-where-is-it-now" class="storylink">OLPC’s $100 laptop was going to change the world, then it all went wrong (2018)</a><span class="sitebit comhead"> (<a href="from?site=theverge.com"><span class="sitestr">theverge.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21046984">151 points</span> by <a href="user?id=zer0tonin" class="hnuser">zer0tonin</a> <span class="age"><a href="item?id=21046984">8 hours ago</a></span> <span id="unv_21046984"></span> | <a href="hide?id=21046984&goto=news">hide</a> | <a href="item?id=21046984">118 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21049416">
+      <td align="right" valign="top" class="title"><span class="rank">26.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21049416" href="vote?id=21049416&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="item?id=21049416" class="storylink">Thomas Cook: Other Opportunities</a></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21049416">25 points</span> by <a href="user?id=Raj7k" class="hnuser">Raj7k</a> <span class="age"><a href="item?id=21049416">1 hour ago</a></span> <span id="unv_21049416"></span> | <a href="hide?id=21049416&goto=news">hide</a> | <a href="item?id=21049416">5 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21050498">
+      <td align="right" valign="top" class="title"><span class="rank">27.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21050498" href="vote?id=21050498&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://venturebeat.com/2019/09/23/kheiron-raises-22-million-for-machine-learning-that-helps-radiologists-detect-cancer-earlier/" class="storylink" rel="nofollow">Kheiron raises $22M for AI that helps radiologists detect cancer earlier</a><span class="sitebit comhead"> (<a href="from?site=venturebeat.com"><span class="sitestr">venturebeat.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21050498">4 points</span> by <a href="user?id=techlad84" class="hnuser">techlad84</a> <span class="age"><a href="item?id=21050498">14 minutes ago</a></span> <span id="unv_21050498"></span> | <a href="hide?id=21050498&goto=news">hide</a> | <a href="item?id=21050498">discuss</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21049284">
+      <td align="right" valign="top" class="title"><span class="rank">28.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21049284" href="vote?id=21049284&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://sivers.org/tp1" class="storylink">Travel without a phone</a><span class="sitebit comhead"> (<a href="from?site=sivers.org"><span class="sitestr">sivers.org</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21049284">58 points</span> by <a href="user?id=galfarragem" class="hnuser">galfarragem</a> <span class="age"><a href="item?id=21049284">2 hours ago</a></span> <span id="unv_21049284"></span> | <a href="hide?id=21049284&goto=news">hide</a> | <a href="item?id=21049284">45 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21043521">
+      <td align="right" valign="top" class="title"><span class="rank">29.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21043521" href="vote?id=21043521&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://chriskiehl.com/article/gooey-as-a-universal-frontend" class="storylink">Using Gooey as a Universal Front End for Any Language or CLI Application</a><span class="sitebit comhead"> (<a href="from?site=chriskiehl.com"><span class="sitestr">chriskiehl.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21043521">489 points</span> by <a href="user?id=goostavos" class="hnuser">goostavos</a> <span class="age"><a href="item?id=21043521">20 hours ago</a></span> <span id="unv_21043521"></span> | <a href="hide?id=21043521&goto=news">hide</a> | <a href="item?id=21043521">82 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+                <tr class="athing" id="21045369">
+      <td align="right" valign="top" class="title"><span class="rank">30.</span></td>      <td valign="top" class="votelinks"><center><a id="up_21045369" href="vote?id=21045369&how=up&goto=news"><div class="votearrow" title="upvote"></div></a></center></td><td class="title"><a href="https://pdfs.semanticscholar.org/442f/0f5205c7d4674612204ecc8357367dabbf45.pdf" class="storylink">Smalltalk-72 Instruction Manual (1976) [pdf]</a><span class="sitebit comhead"> (<a href="from?site=semanticscholar.org"><span class="sitestr">semanticscholar.org</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+        <span class="score" id="score_21045369">63 points</span> by <a href="user?id=mpweiher" class="hnuser">mpweiher</a> <span class="age"><a href="item?id=21045369">14 hours ago</a></span> <span id="unv_21045369"></span> | <a href="hide?id=21045369&goto=news">hide</a> | <a href="item?id=21045369">8 comments</a>              </td></tr>
+      <tr class="spacer" style="height:5px"></tr>
+            <tr class="morespace" style="height:10px"></tr><tr><td colspan="2"></td><td class="title"><a href="news?p=2" class="morelink" rel="next">More</a></td></tr>
+  </tbody></table>
+</td></tr>
+<tr><td><img data-savepage-src="s.gif" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tbody><tr><td bgcolor="#ff6600"></td></tr></tbody></table><br><center><a href="https://www.ycombinator.com/apply/">
+        Applications are open for YC Winter 2020
+      </a></center><br><center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+        | <a href="newsfaq.html">FAQ</a>
+        | <a href="mailto:hn@ycombinator.com">Support</a>
+        | <a href="https://github.com/HackerNews/API">API</a>
+        | <a href="security.html">Security</a>
+        | <a href="lists">Lists</a>
+        | <a href="bookmarklet.html" rel="nofollow">Bookmarklet</a>
+        | <a href="http://www.ycombinator.com/legal/">Legal</a>
+        | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+        | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br><form method="get" action="//hn.algolia.com/">Search:
+          <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form>
+            </center></td></tr>
+      </tbody></table></center><script type="text/javascript" data-savepage-src="hn.js?7r87lPW1k7967JOzhaik"></script>
+  
+</body></html>

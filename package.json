@@ -4,10 +4,14 @@
   "main": "build/index.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack -p"
+    "start": "parcel example/index.html",
+    "build": "webpack -p",
+    "lint": "eslint . --fix"
   },
   "dependencies": {
-    "diff_match_patch": "^0.1.1"
+    "diff_match_patch": "^0.1.1",
+    "jquery": "^3.4.1",
+    "optimal-select": "^4.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
@@ -16,7 +20,12 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-stage-0": "^7.0.0",
     "@babel/runtime": "^7.4.4",
+    "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
+    "eslint": "6.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "parcel-bundler": "^1.12.3",
     "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2"
   },
