@@ -42,7 +42,7 @@ export default function example(select, helper, jQuery) {
   );
   console.log(
     `Like this ` +
-      `%chelper.predictCss([jQuery("${firstTitleSelector}")], jQuery(\`${hideElemSelector}, ${topBarSelector}\`))`,
+      `%chelper.predictCss(jQuery("${firstTitleSelector}"), jQuery(\`${hideElemSelector}, ${topBarSelector}\`))`,
     "color: brown; font-weight:bold;"
   );
   console.log(

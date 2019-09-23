@@ -69,4 +69,4 @@ yarn run start
 Open browser and go to http://localhost:1234/
 
 Your window will look like this,
-![](http://i.imgur.com/bGRHhd8.png)
+![](http://i.imgur.com/ntD9ZQ5.png)
