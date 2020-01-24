@@ -8,6 +8,8 @@ export default class DomPredictionHelper {
     } else {
       n = new Array();
     }
+    
+    if (e.host && e.host.shadowRoot) return n;
     n.push(e);
     return n;
   }
@@ -54,7 +56,7 @@ export default class DomPredictionHelper {
     filtered_nodes = [];
     for (_i = 0, _len = nodes.length; _i < _len; _i++) {
       node = nodes[_i];
-      if (node.nodeName.substring(0, 1) === "#") {
+      if (node.nodeName.substring(0, 1) === "#" || node.nodeName === 'STYLE') {
         continue;
       }
       if (node === e) {
