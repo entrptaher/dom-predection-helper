@@ -460,7 +460,7 @@ export default class DomPredictionHelper {
         .replace(/[\+\~\>]\s*,/g, ",")
         .replace(/[\+\~]\s*>/g, ">")
         .replace(/\s*(,\s*)+/g, " , ")
-        .replace(/#(\d[\w\-]+)/g, '[id="$1"]');
+        .replace(/#(\d([\w\-]|\\:|\\.)+)/g, '[id="$1"]');
     }
     return cleaned_css;
   }
