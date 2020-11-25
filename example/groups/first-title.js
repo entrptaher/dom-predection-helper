@@ -1,4 +1,4 @@
-export default function example(select, helper, jQuery) {
+export default function example(select, helper) {
   const firstTitleElem = document.querySelector(".storylink");
   const firstTitleSelector = select(firstTitleElem);
   // will produce unique selector
@@ -19,7 +19,7 @@ export default function example(select, helper, jQuery) {
   );
   console.log(
     `We will get a common selector ` +
-      `%c${helper.predictCss(jQuery(firstTitleSelector), [])}`,
+      `%c${helper.predictCss(document.querySelectorAll(firstTitleSelector), [])}`,
     "color: green; font-weight:bold;"
   );
   

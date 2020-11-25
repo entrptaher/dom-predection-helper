@@ -1,4 +1,4 @@
-export default function example(select, helper, jQuery) {
+export default function example(select, helper) {
   const firstTitleElem = document.querySelector(".subtext a+ a");
   const firstTitleSelector = select(firstTitleElem);
 
@@ -9,8 +9,8 @@ export default function example(select, helper, jQuery) {
   const hideElemSelector = select(hideElem);
 
   const commonSelector = helper.predictCss(
-    jQuery(firstTitleSelector),
-    jQuery([topBarSelector, hideElemSelector].join(","))
+    document.querySelectorAll(firstTitleSelector),
+    document.querySelectorAll([topBarSelector, hideElemSelector].join(","))
   );
   const results = document.querySelectorAll(commonSelector);
 
@@ -30,7 +30,7 @@ export default function example(select, helper, jQuery) {
   );
   console.log(
     `We will get a common selector ` +
-      `%c${helper.predictCss(jQuery(firstTitleSelector), [])}`,
+      `%c${helper.predictCss(document.querySelectorAll(firstTitleSelector), [])}`,
     "color: green; font-weight:bold;"
   );
   console.log(

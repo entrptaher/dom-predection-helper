@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "diff_match_patch": "^0.1.1",
-    "jquery": "^3.4.1",
     "optimal-select": "^4.0.1"
   },
   "devDependencies": {

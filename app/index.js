@@ -459,7 +459,8 @@ export default class DomPredictionHelper {
         .replace(/^>\s*/g, "")
         .replace(/[\+\~\>]\s*,/g, ",")
         .replace(/[\+\~]\s*>/g, ">")
-        .replace(/\s*(,\s*)+/g, " , ");
+        .replace(/\s*(,\s*)+/g, " , ")
+        .replace(/#(\d[\w\-]+)/g, '[id="$1"]');
     }
     return cleaned_css;
   }
@@ -506,9 +507,9 @@ export default class DomPredictionHelper {
     }
     try {
       if (type === "all") {
-        return list.not(the_selector).length === 0;
+        return [...list].every(node => node.matches(the_selector));
       } else {
-        return !list.is(the_selector);
+        return [...list].every(node => !node.matches(the_selector));
       }
     } catch (e) {
       if (window.console) {
