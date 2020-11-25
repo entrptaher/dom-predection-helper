@@ -25,7 +25,7 @@ export default function example(select, helper) {
   );
   console.log(
     `If we pass it like ` +
-      `%chelper.predictCss(jQuery("${firstTitleSelector}"), [])`,
+      `%chelper.predictCss(document.querySelectorAll("${firstTitleSelector}"), [])`,
     "color: brown; font-weight:bold;"
   );
   console.log(
@@ -42,7 +42,7 @@ export default function example(select, helper) {
   );
   console.log(
     `Like this ` +
-      `%chelper.predictCss(jQuery("${firstTitleSelector}"), jQuery(\`${hideElemSelector}, ${topBarSelector}\`))`,
+      `%chelper.predictCss(document.querySelectorAll("${firstTitleSelector}"), document.querySelectorAll(\`${hideElemSelector}, ${topBarSelector}\`))`,
     "color: brown; font-weight:bold;"
   );
   console.log(
