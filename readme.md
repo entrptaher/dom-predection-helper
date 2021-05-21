@@ -21,7 +21,7 @@ However, if you use the following, it will return all titles on that page,
 So if you give the library a list of elements, it will find a common selector. For example, the following,
 
 ```
-helper.predictCss(jQuery("#\32 1041784 > td:nth-child(3) > a"), [])
+helper.predictCss(document.querySelectorAll("#\32 1041784 > td:nth-child(3) > a"), [])
 ```
 
 will return the following,
@@ -34,15 +34,15 @@ That's a common selector.
 
 # Usage
 
-The format for `.predictCss(selected,rejected)` is that you give it a list of selected elements and a list of rejected elements using jQuery. It will return a **common selector** based on that scope.
+The format for `.predictCss(selected,rejected)` is that you give it a list of selected elements and a list of rejected elements using document.querySelectorAll. It will return a **common selector** based on that scope.
 
 Test it out:
 
 ```js
 var pHelper = new DomPredictionHelper();
 var css = pHelper.predictCss(
-  jQuery(".title > .storylink"),
-  jQuery('[id="15781883"]')
+  document.querySelectorAll(".title > .storylink"),
+  document.querySelectorAll('[id="15781883"]')
 );
 console.log(css);
 ```
@@ -51,11 +51,11 @@ Not only that, you can reject few elements and get a more specific common select
 
 All of the following will work,
 
-- .predictCss(jQuery("some unique selector(s)"), jQuery("some unique selector(s)"))
-- .predictCss(jQuery(some element or elements), jQuery(some element or elements))
-- .predictCss(jQuery(event.target), jQuery(event.target))
+- .predictCss(document.querySelectorAll("some unique selector(s)"), document.querySelectorAll("some unique selector(s)"))
+- .predictCss(document.querySelectorAll(some element or elements), document.querySelectorAll(some element or elements))
+- .predictCss(document.querySelectorAll(event.target), document.querySelectorAll(event.target))
 
-Basically, anything you can pass to jQuery, you can pass to predictCss, it will just require two instances, one with selected items, one with rejected items.
+Basically, anything you can pass to document.querySelectorAll, you can pass to predictCss, it will just require two instances, one with selected items, one with rejected items.
 
 # Development
 
