@@ -4,7 +4,8 @@ module.exports = {
   "env":{
     "browser": true,
     "amd": true,
-    "node":true
+    "node":true,
+    "jest/globals": true,
   },
   "rules": {
     // these three rules will be removed if the main algorithm is rewritten
