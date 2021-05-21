@@ -1,4 +1,4 @@
-export default function example(select, helper, jQuery) {
+export default function example(select, helper) {
   const firstTitleElem = document.querySelector(".subtext a+ a");
   const firstTitleSelector = select(firstTitleElem);
 
@@ -9,8 +9,8 @@ export default function example(select, helper, jQuery) {
   const hideElemSelector = select(hideElem);
 
   const commonSelector = helper.predictCss(
-    jQuery(firstTitleSelector),
-    jQuery([topBarSelector, hideElemSelector].join(","))
+    document.querySelectorAll(firstTitleSelector),
+    document.querySelectorAll([topBarSelector, hideElemSelector].join(","))
   );
   const results = document.querySelectorAll(commonSelector);
 
@@ -25,12 +25,12 @@ export default function example(select, helper, jQuery) {
   );
   console.log(
     `If we pass it like ` +
-      `%chelper.predictCss(jQuery("${firstTitleSelector}"), [])`,
+      `%chelper.predictCss(document.querySelectorAll("${firstTitleSelector}"), [])`,
     "color: brown; font-weight:bold;"
   );
   console.log(
     `We will get a common selector ` +
-      `%c${helper.predictCss(jQuery(firstTitleSelector), [])}`,
+      `%c${helper.predictCss(document.querySelectorAll(firstTitleSelector), [])}`,
     "color: green; font-weight:bold;"
   );
   console.log(
@@ -42,7 +42,7 @@ export default function example(select, helper, jQuery) {
   );
   console.log(
     `Like this ` +
-      `%chelper.predictCss(jQuery("${firstTitleSelector}"), jQuery(\`${hideElemSelector}, ${topBarSelector}\`))`,
+      `%chelper.predictCss(document.querySelectorAll("${firstTitleSelector}"), document.querySelectorAll(\`${hideElemSelector}, ${topBarSelector}\`))`,
     "color: brown; font-weight:bold;"
   );
   console.log(
