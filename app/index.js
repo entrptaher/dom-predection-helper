@@ -495,7 +495,6 @@ export default class DomPredictionHelper {
       union = `${this.pathOf(selected)}, ${union}`;
     }
     union = this.cleanCss(union);
-    console.log(union);
     return this.simplifyCss(union, s, r);
   }
 
