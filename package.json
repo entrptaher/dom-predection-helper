@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel example/index.html",
-    "build": "webpack -p",
+    "build": "NODE_ENV=production yarn build",
     "lint": "eslint . --fix"
   },
   "dependencies": {
@@ -13,20 +13,20 @@
     "optimal-select": "^4.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.4",
-    "@babel/plugin-transform-runtime": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/preset-stage-0": "^7.0.0",
-    "@babel/runtime": "^7.4.4",
-    "babel-eslint": "^10.0.3",
-    "babel-loader": "^8.0.6",
-    "eslint": "6.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "parcel-bundler": "^1.12.3",
-    "webpack": "^4.31.0",
-    "webpack-cli": "^3.3.2"
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-stage-0": "^7.8.3",
+    "@babel/runtime": "^7.14.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.26.0",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "parcel-bundler": "^1.12.5",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
   },
   "files": [
     "build"
